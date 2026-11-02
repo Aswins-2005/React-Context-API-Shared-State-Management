@@ -1,16 +1,90 @@
-# React + Vite
+# React Context API – Shared State Management
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+## 📌 About the Project
 
-Currently, two official plugins are available:
+This project demonstrates how to use the **React Context API** to share state between components without passing props through every level of the component tree.
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react) uses [Oxc](https://oxc.rs)
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react-swc) uses [SWC](https://swc.rs/)
+It features reusable card and button components with a shared counter that updates whenever any button is clicked.
 
-## React Compiler
+## 🚀 Features
 
-The React Compiler is not enabled on this template because of its impact on dev & build performances. To add it, see [this documentation](https://react.dev/learn/react-compiler/installation).
+- **Context API:** Shares state across multiple components.
+- **useContext Hook:** Accesses context values from nested components.
+- **useState Hook:** Manages the counter state.
+- **Reusable Components:** Uses separate Card and Button components.
+- **Interactive Counter:** All buttons update the same counter.
+- **Responsive UI:** Uses CSS Flexbox and media queries for responsive layouts.
+- **Component-Based Architecture:** Organizes the project into reusable components.
 
-## Expanding the ESLint configuration
+## 🛠️ Technologies Used
 
-If you are developing a production application, we recommend using TypeScript with type-aware lint rules enabled. Check out the [TS template](https://github.com/vitejs/vite/tree/main/packages/create-vite/template-react-ts) for information on how to integrate TypeScript and [`typescript-eslint`](https://typescript-eslint.io) in your project.
+- React.js
+- JavaScript (ES6+)
+- HTML5
+- CSS3
+- Vite
+
+## 📂 Project Structure
+
+```text
+src/
+├── components/
+│   ├── Context.jsx
+│   ├── button/
+│   │   └── Button.jsx
+│   └── card/
+│       └── Card.jsx
+├── App.jsx
+├── App.css
+└── main.jsx
+```
+
+## ⚙️ Getting Started
+
+### 1. Clone the repository
+
+```bash
+git clone <your-repository-url>
+```
+
+### 2. Navigate to the project folder
+
+```bash
+cd <your-project-folder>
+```
+
+### 3. Install dependencies
+
+```bash
+npm install
+```
+
+### 4. Start the development server
+
+```bash
+npm run dev
+```
+
+Open the local URL provided by Vite in your browser.
+
+## 🧠 Concepts Learned
+
+- Creating a context with `createContext()`
+- Sharing values through `Context.Provider`
+- Accessing shared values using `useContext()`
+- Managing state with `useState()`
+- Updating state from nested components
+- Building reusable React components
+- Understanding prop drilling and Context API
+
+## 👨‍💻 Author
+
+**Aswin**
+
+B.Tech – Computer Science and Business Systems
+
+GitHub: [Aswins-2005](https://github.com/Aswins-2005)
+
+## 📄 License
+
+This project is open-source and available for learning and educational purposes.
